@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Weather Forecast</title>
+</head>
+
+<body class="color">
+    <div id="myVideo" class="embed-responsive embed-responsive-1by1 ">
+        <video autoplay loop>
+            <source src="city.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="main">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand text-white font-weight-bold" href="#">Weather Bug</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Graph</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container ">
+
+            <div class="mx-auto d-flex justify-content-center mt-3">
+                <h1 id="description" style="text-transform:capitalize;">Thunderstorm with heavy rain</h1>
+            </div>
+            <div class=" mx-auto d-flex justify-content-center">
+                <h2 id="tempData" class="font-weight-bold text-secondary d-flex justify-content-center"> </h2>
+                <h2 class="font-weight-bold text-secondary d-flex justify-content-center">°C</h2>
+            </div>
+
+
+            <section class="five-day-forecast mt-5 mx-auto d-flex justify-content-center ">
+                <div id="current-day"></div>
+
+                <ul>
+                    <li data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false"
+                        aria-controls="collapseExample">
+                        <span id="day1" class="day font-weight-bold">Tuesday</span>
+                        <div>
+                            <span id="temp1" class="temp font-weight-bold">26°C</span>
+                        </div>
+                    </li>
+                    <div class="collapse" id="collapseExample1">
+                        <div class="card bg-dark card-body">
+                            <span class="text-white" id="standardDate1">11.08.2020</span>
+                            <h4 class="description text-white" style="text-transform:capitalize;">Thunderstorm with
+                                heavy rain</h4>
+
+                            <div class="min-max-temp">
+                                <span class="font-weight-normal font-weight-bold text-white">Max temp</span>
+                                <span id="max1" class="max-temp text-white">29°C</span>
+
+                                <span class="font-weight-normal font-weight-bold text-white">Min temp</span>
+                                <span id="min1" class="min-temp text-white">24°C</span>
+
+                            </div>
+                            <div class="humidity-wind">
+                                <span class="font-weight-normal font-weight-bold text-white">Humidity</span>
+                                <span id="hum1" class="humidity text-white">90%</span>
+
+                                <span class="font-weight-normal font-weight-bold text-white">Wind Speed</span>
+                                <img class="card" src="arrow.png" alt="214 degrees" style="transform: rotate(314deg);">
+                                <span id="wind1" class="wind text-white">11 km/h</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <li data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false"
+                        aria-controls="collapseExample">
+                        <span id="day2" class="day font-weight-bold">Wednesday</span>
+                        <div>
+                            <span id="temp2" class="temp font-weight-bold">26°C</span>
+                        </div>
+                    </li>
+
+                    <div class="collapse bg-dark" id="collapseExample2">
+                        <div class="card bg-dark card-body">
+                            <span class="text-white" id="standardDate2">11.08.2020</span>
+                            <h4 class="description text-white" style="text-transform:capitalize;">Thunderstorm with
+                                heavy rain</h4>
+
+                            <div class="min-max-temp">
+                                <span class="font-weight-normal font-weight-bold text-white">Max temp</span>
+                                <span id="max2" class="max-temp text-white">29°C</span>
+
+                                <span class="font-weight-normal font-weight-bold text-white">Min temp</span>
+                                <span id="min2" class="min-temp text-white">24°C</span>
+                            </div>
+                            <div class="humidity-wind">
+                                <span class="font-weight-normal font-weight-bold text-white">Humidity</span>
+                                <span id="hum2" class="humidity text-white">90%</span>
+
+                                <span class="font-weight-normal font-weight-bold text-white">Wind Speed</span>
+                                <img src="arrow.png" alt="214 degrees" style="transform: rotate(340deg);">
+                                <span id="wind2" class="wind text-white">11 km/h</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <li data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false"
+                        aria-controls="collapseExample">
+                        <span id="day3" class="day font-weight-bold">Thursday</span>
+                        <div>
+                            <span id="temp3" class="temp font-weight-bold">25°C</span>
+                        </div>
+                    </li>
+
+                    <div class="collapse bg-dark" id="collapseExample3">
+                        <div class="card bg-dark card-body">
+                            <span class="text-white" id="standardDate3">11.08.2020</span>
+                            <h4 class="description text-white" style="text-transform:capitalize;">Thunderstorm with
+                                heavy rain</h4>
+
+                            <div class="min-max-temp">
+                                <span class="font-weight-normal font-weight-bold text-white">Max temp</span>
+                                <span id="max3" class="max-temp text-white">29°C</span>
+
+                                <span class="font-weight-normal font-weight-bold text-white">Min temp</span>
+                                <span id="min3" class="min-temp text-white">24°C</span>
+                            </div>
+                            <div class="humidity-wind">
+                                <span class="font-weight-normal font-weight-bold text-white">Humidity</span>
+                                <span id="hum3" class="humidity text-white">90%</span>
+
+                                <span class="font-weight-normal font-weight-bold text-white">Wind Speed</span>
+                                <img src="arrow.png" alt="214 degrees" style="transform: rotate(340deg);">
+                                <span id="wind3" class="wind text-white">11 km/h</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <li data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false"
+                        aria-controls="collapseExample">
+                        <span id="day4" class="day font-weight-bold">Friday</span>
+                        <div>
+                            <span id="temp4" class="temp font-weight-bold">25°C</span>
+                        </div>
+                    </li>
+
+                    <div class="collapse bg-dark" id="collapseExample4">
+                        <div class="card bg-dark card-body">
+                            <span class="text-white" id="standardDate4">11.08.2020</span>
+                            <h4 class="description text-white" style="text-transform:capitalize;">Thunderstorm with
+                                heavy rain</h4>
+
+                            <div class="min-max-temp">
+                                <span class="font-weight-normal font-weight-bold text-white">Max temp</span>
+                                <span id="max4" class="max-temp text-white">29°C</span>
+
+                                <span class="font-weight-normal font-weight-bold text-white">Min temp</span>
+                                <span id="min4" class="min-temp text-white">24°C</span>
+                            </div>
+                            <div class="humidity-wind">
+                                <span class="font-weight-normal font-weight-bold text-white">Humidity</span>
+                                <span id="hum4" class="humidity text-white">90%</span>
+
+                                <span class="font-weight-normal font-weight-bold text-white">Wind Speed</span>
+                                <img src="arrow.png" alt="214 degrees" style="transform: rotate(340deg);">
+                                <span id="wind4" class="wind text-white">11 km/h</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <li data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false"
+                        aria-controls="collapseExample">
+                        <span id="day5" class="day font-weight-bold">Saturday</span>
+                        <div>
+                            <span id="temp5" class="temp font-weight-bold">26°C</span>
+                        </div>
+                    </li>
+
+                    <div class="collapse bg-dark" id="collapseExample5">
+                        <div class="card bg-dark card-body">
+                            <span class="text-white" id="standardDate5">11.08.2020</span>
+                            <h4 class="description text-white" style="text-transform:capitalize;">Thunderstorm with
+                                heavy rain</h4>
+
+                            <div class="min-max-temp">
+                                <span class="font-weight-normal font-weight-bold text-white">Max temp</span>
+                                <span id="max5" class="max-temp text-white">29°C</span>
+
+                                <span class="font-weight-normal font-weight-bold text-white">Min temp</span>
+                                <span id="min5" class="min-temp text-white">24°C</span>
+                            </div>
+                            <div class="humidity-wind">
+                                <span class="font-weight-normal font-weight-bold text-white">Humidity</span>
+                                <span id="hum5" class="humidity text-white">90%</span>
+
+                                <span class="font-weight-normal font-weight-bold text-white">Wind Speed</span>
+                                <img src="arrow.png" alt="214 degrees" style="transform: rotate(340deg);">
+                                <span id="wind5" class="wind text-white">11 km/h</span>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="/location.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+
+</html>
