@@ -31,7 +31,7 @@ window.addEventListener('load', function locate() {
         long = position.coords.longitude
         console.log(lat, long)
 
-        fetch('https://api.openweathermap.org/data/2.5/onecall?lat=' + lat + '&lon=' + long + '&exclude=hourly,minutely&appid=<Enter you API Key>&units=metric').then((response) => {
+        fetch('https://api.openweathermap.org/data/2.5/onecall?lat=' + lat + '&lon=' + long + '&exclude=hourly,minutely&appid=c00fac4771748e540b0b33c89ee9d89d&units=metric').then((response) => {
             response.json().then((data) => {
                 console.log(data)
                 console.log(data.daily[0].weather[0].description)
